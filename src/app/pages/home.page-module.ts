@@ -7,6 +7,7 @@ import { NavbarComponentModule } from '../../../projects/navigation/src/lib/adap
 import { AboutUsComponentModule } from '@about';
 import { OfferComponentModule } from '@offer';
 import { GalleryComponentModule } from '@gallery';
+import { ContactComponentModule } from '@contact';
 
 @NgModule({
   imports: [
@@ -15,6 +16,7 @@ import { GalleryComponentModule } from '@gallery';
     AboutUsComponentModule,
     OfferComponentModule,
     GalleryComponentModule,
+    ContactComponentModule,
     RouterModule.forChild([
       {
         path: '',
