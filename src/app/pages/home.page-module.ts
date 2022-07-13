@@ -6,6 +6,7 @@ import { HomeComponentModule } from '@home';
 import { NavbarComponentModule } from '../../../projects/navigation/src/lib/adapters/primary/ui/navbar.component-module';
 import { AboutUsComponentModule } from '@about';
 import { OfferComponentModule } from '@offer';
+import { GalleryComponentModule } from '@gallery';
 
 @NgModule({
   imports: [
@@ -13,6 +14,7 @@ import { OfferComponentModule } from '@offer';
     HomeComponentModule,
     AboutUsComponentModule,
     OfferComponentModule,
+    GalleryComponentModule,
     RouterModule.forChild([
       {
         path: '',
