@@ -5,12 +5,14 @@ import { HomePage } from './home.page';
 import { HomeComponentModule } from '@home';
 import { NavbarComponentModule } from '../../../projects/navigation/src/lib/adapters/primary/ui/navbar.component-module';
 import { AboutUsComponentModule } from '@about';
+import { OfferComponentModule } from '@offer';
 
 @NgModule({
   imports: [
     CommonModule,
     HomeComponentModule,
     AboutUsComponentModule,
+    OfferComponentModule,
     RouterModule.forChild([
       {
         path: '',
