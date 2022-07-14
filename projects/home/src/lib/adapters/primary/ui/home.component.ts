@@ -1,15 +1,15 @@
 import {
-  Component,
-  ViewEncapsulation,
   ChangeDetectionStrategy,
+  Component,
   Inject,
+  ViewEncapsulation,
 } from '@angular/core';
 import { Observable } from 'rxjs';
 import { HeroTextDTO } from '../../../application/ports/secondary/hero-text.dto';
 import {
-  GETS_ALL_HERO_TEXT_DTO,
-  GetsAllHeroTextDtoPort,
-} from '../../../application/ports/secondary/gets-all-hero-text.dto-port';
+  GETS_ONE_HERO_TEXT_DTO,
+  GetsOneHeroTextDtoPort,
+} from '../../../application/ports/primary/dto/gets-one-hero-text.dto-port';
 
 @Component({
   selector: 'lib-home',
@@ -18,10 +18,12 @@ import {
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class HomeComponent {
-  texts$: Observable<HeroTextDTO[]> = this._getsAllHeroTextDto.getAll();
+  text$: Observable<HeroTextDTO> = this._getsOneHeroTextDto.getOne(
+    'AXbvKnj5csEnVZu9l5jV'
+  );
 
   constructor(
-    @Inject(GETS_ALL_HERO_TEXT_DTO)
-    private _getsAllHeroTextDto: GetsAllHeroTextDtoPort
+    @Inject(GETS_ONE_HERO_TEXT_DTO)
+    private _getsOneHeroTextDto: GetsOneHeroTextDtoPort
   ) {}
 }
