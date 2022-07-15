@@ -9,6 +9,7 @@ import { provideFirestore, getFirestore } from '@angular/fire/firestore';
 import { FirebaseHeroTextsServiceModule } from '@home';
 import { AngularFireModule } from '@angular/fire/compat';
 import { FirebaseAboutTextsServiceModule } from '@about';
+import { FirebaseOffersServiceModule } from '@offer';
 
 @NgModule({
   declarations: [AppComponent],
@@ -20,6 +21,7 @@ import { FirebaseAboutTextsServiceModule } from '@about';
     AngularFireModule.initializeApp(environment.firebase),
     FirebaseHeroTextsServiceModule,
     FirebaseAboutTextsServiceModule,
+    FirebaseOffersServiceModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
