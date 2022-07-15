@@ -8,6 +8,7 @@ import { environment } from '../environments/environment';
 import { provideFirestore, getFirestore } from '@angular/fire/firestore';
 import { FirebaseHeroTextsServiceModule } from '@home';
 import { AngularFireModule } from '@angular/fire/compat';
+import { FirebaseAboutTextsServiceModule } from '@about';
 
 @NgModule({
   declarations: [AppComponent],
@@ -18,6 +19,7 @@ import { AngularFireModule } from '@angular/fire/compat';
     provideFirestore(() => getFirestore()),
     AngularFireModule.initializeApp(environment.firebase),
     FirebaseHeroTextsServiceModule,
+    FirebaseAboutTextsServiceModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
