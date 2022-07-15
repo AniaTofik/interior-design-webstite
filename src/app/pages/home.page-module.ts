@@ -8,6 +8,10 @@ import { AboutUsComponentModule } from '@about';
 import { OfferComponentModule } from '@offer';
 import { GalleryComponentModule } from '@gallery';
 import { ContactComponentModule } from '@contact';
+import {
+  FooterComponentModule,
+  NewsletterComponentModule,
+} from 'projects/footer/src';
 
 @NgModule({
   imports: [
@@ -25,6 +29,8 @@ import { ContactComponentModule } from '@contact';
       },
     ]),
     NavbarComponentModule,
+    FooterComponentModule,
+    NewsletterComponentModule,
   ],
   declarations: [HomePage],
   providers: [],
