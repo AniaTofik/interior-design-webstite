@@ -4,26 +4,14 @@
       <h2 class="py-3">Nasza ekipa</h2>
       <div class="container">
         <div class="row">
-          <div class="col-sm-6">
+          <div class="col-sm-6" *ngFor=" let text of texts$ | async">
             <div class="card border-0 bg-light">
-              <img src="https://cdn.pixabay.com/photo/2017/06/01/00/44/smiling-2362136_960_720.jpg" class="card-img-top"
-                alt="...">
+              <img [src]="text.imageUrl" class="card-img-top" [alt]="text.alt">
               <div class="card-body">
-                <h5 class="card-title">Magda</h5>
+                <h5 class="card-title">{{text.title}}</h5>
                 <hr>
-                <p class="card-text fw-normal">PROJEKTOWANIE WNĘTRZ, GENIALNE POMYSŁY, OPTYMALIZACJA KOSZTÓW PROJEKTÓW
+                <p class="card-text fw-normal">{{text.text}}
                 </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-6">
-            <div class="card border-0 bg-light">
-              <img src="https://cdn.pixabay.com/photo/2021/04/26/09/30/man-6208470_960_720.jpg" class="card-img-top"
-                alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Maciek</h5>
-                <hr>
-                <p class="card-text fw-normal">WSPARCIE TECHNICZNE, WYCENA PROJEKTÓW, SPRAWY ORGANIZACYJNE</p>
               </div>
             </div>
           </div>

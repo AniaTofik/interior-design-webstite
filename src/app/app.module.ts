@@ -11,6 +11,7 @@ import { AngularFireModule } from '@angular/fire/compat';
 import { FirebaseAboutTextsServiceModule } from '@about';
 import { FirebaseOffersServiceModule } from '@offer';
 import { FirebaseNewsletterServiceModule } from '@footer';
+import { FirebaseEmployeesServiceModule } from '@team';
 
 @NgModule({
   declarations: [AppComponent],
@@ -24,6 +25,7 @@ import { FirebaseNewsletterServiceModule } from '@footer';
     FirebaseAboutTextsServiceModule,
     FirebaseOffersServiceModule,
     FirebaseNewsletterServiceModule,
+    FirebaseEmployeesServiceModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
