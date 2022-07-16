@@ -13,6 +13,7 @@ import {
   NewsletterComponentModule,
 } from 'projects/footer/src';
 import { TeamComponentModule } from '@team';
+import { ProjectsComponentModule } from '@projects';
 
 @NgModule({
   imports: [
@@ -33,6 +34,7 @@ import { TeamComponentModule } from '@team';
     FooterComponentModule,
     NewsletterComponentModule,
     TeamComponentModule,
+    ProjectsComponentModule,
   ],
   declarations: [HomePage],
   providers: [],
