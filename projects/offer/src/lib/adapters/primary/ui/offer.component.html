@@ -1,4 +1,4 @@
-<section class="container-fluid fw-bold" id="gallery" data-bgrepeat="no-repeat">
+<section id="offer" class="container-fluid fw-bold" id="gallery" data-bgrepeat="no-repeat">
   <div class="row bg-light pt-3">
     <div class="header text-center py-2 px-4 text-uppercase">
       <h2>Nasza oferta</h2>
@@ -7,15 +7,6 @@
     </div>
   </div>
   <div class="row d-flex justify-content-center py-3">
-    <!-- <div *ngFor="let offer of offers$ | async" class="card text-center border-0" style="width: 15rem;">
-      <span class="material-symbols-outlined text-primary" style="font-size: 4rem;">
-        {{offer.icon}}
-      </span>
-      <div class="card-body">
-        <h6 class="card-title fw-bold">{{offer.title}}</h6>
-        <p class="card-text fw-normal" style="font-size: 12px">{{offer.text}}</p>
-      </div>
-    </div> -->
     <div *ngFor="let offer of offers$ | async" class="card text-center border-0" style="width: 15rem;">
       <span class="material-symbols-outlined text-primary" style="font-size: 4rem;">
         {{offer.icon}}

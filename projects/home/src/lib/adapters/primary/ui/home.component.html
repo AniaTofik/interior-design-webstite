@@ -1,10 +1,9 @@
 <section class="container-fluid text-light fw-bold d-flex flex-column justify-content-center align-item-center">
   <div *ngIf="text$ | async as text">
-    <img class="position-relative" [src]="text.imageUrl" class="d-block w-100 h-50vh" alt="...">
+    <img class="position-relative" [src]="text.imageUrl" class="d-block w-100" alt="...">
   </div>
   <div class="position-absolute px-5 text-center d-flex flex-column justify-content-center align-items-center"
     *ngIf="text$ | async as text">
     <h1 class="text-uppercase">{{text.title}}</h1>
     <h6 class="text-lowercase">{{text.text}}</h6>
   </div>
-</section>
