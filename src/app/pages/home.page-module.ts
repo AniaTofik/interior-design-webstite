@@ -12,6 +12,7 @@ import {
   FooterComponentModule,
   NewsletterComponentModule,
 } from 'projects/footer/src';
+import { TeamComponentModule } from '@team';
 
 @NgModule({
   imports: [
@@ -31,6 +32,7 @@ import {
     NavbarComponentModule,
     FooterComponentModule,
     NewsletterComponentModule,
+    TeamComponentModule,
   ],
   declarations: [HomePage],
   providers: [],

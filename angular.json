@@ -221,6 +221,22 @@
           }
         }
       }
+    },
+    "team": {
+      "projectType": "library",
+      "root": "projects/team",
+      "sourceRoot": "projects/team/src",
+      "prefix": "lib",
+      "architect": {
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "outputs": ["coverage/team"],
+          "options": {
+            "jestConfig": "projects/team/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
     }
   },
   "defaultProject": "interior-design-website"

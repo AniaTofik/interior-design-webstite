@@ -25,7 +25,8 @@
       "@offer": ["projects/offer/src/index.ts"],
       "@gallery": ["projects/gallery/src/index.ts"],
       "@contact": ["projects/contact/src/index.ts"],
-      "@footer": ["projects/footer/src/index.ts"]
+      "@footer": ["projects/footer/src/index.ts"],
+      "@team": ["projects/team/src/index.ts"]
     }
   },
   "angularCompilerOptions": {
