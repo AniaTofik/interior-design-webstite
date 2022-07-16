@@ -4,9 +4,13 @@
       <div class="row">
         <div class="col-8">
           <p class="text-light fw-bold">DOŁĄCZ DO NASZEGO NEWSLETTERA</p>
-          <p class="bg-dark text-secondary py-2 px-2 w-75 rounded">Podaj adres email</p>
-          <button class="bg-primary text-light border-0 text-uppercase px-2 py-2 w-75 rounded fw-bold"> zapisz
-            mnie</button>
+          <form [formGroup]="newsletterForm" (ngSubmit)="onSubmitFormClicked(newsletterForm)">
+            <input type="text" formControlName="email" placeholder="Podaj adres e-mail"
+              class="bg-dark text-secondary py-2 px-2 w-75 rounded mb-3">
+            <button type="submit" value="Submit"
+              class="bg-primary text-light border-0 text-uppercase px-2 py-2 w-75 rounded fw-bold"> zapisz
+              mnie</button>
+          </form>
         </div>
         <div class="col-4 text-light">
           <p class="text-uppercase fw-bold"> Bądź na bieżąco</p>
@@ -14,7 +18,6 @@
           <p>instagram</p>
         </div>
       </div>
-
     </div>
   </div>
 </section>

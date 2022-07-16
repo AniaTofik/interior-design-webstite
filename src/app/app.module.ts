@@ -10,6 +10,7 @@ import { FirebaseHeroTextsServiceModule } from '@home';
 import { AngularFireModule } from '@angular/fire/compat';
 import { FirebaseAboutTextsServiceModule } from '@about';
 import { FirebaseOffersServiceModule } from '@offer';
+import { FirebaseNewsletterServiceModule } from '@footer';
 
 @NgModule({
   declarations: [AppComponent],
@@ -22,6 +23,7 @@ import { FirebaseOffersServiceModule } from '@offer';
     FirebaseHeroTextsServiceModule,
     FirebaseAboutTextsServiceModule,
     FirebaseOffersServiceModule,
+    FirebaseNewsletterServiceModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

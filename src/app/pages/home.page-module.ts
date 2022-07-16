@@ -9,6 +9,7 @@ import { OfferComponentModule } from '@offer';
 import { GalleryComponentModule } from '@gallery';
 import { ContactComponentModule } from '@contact';
 import {
+  FirebaseNewsletterServiceModule,
   FooterComponentModule,
   NewsletterComponentModule,
 } from 'projects/footer/src';
@@ -24,6 +25,7 @@ import { ProjectsComponentModule } from '@projects';
     GalleryComponentModule,
     ContactComponentModule,
     FirebaseHeroTextsServiceModule,
+    FirebaseNewsletterServiceModule,
     RouterModule.forChild([
       {
         path: '',
