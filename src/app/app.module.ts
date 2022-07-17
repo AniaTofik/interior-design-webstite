@@ -13,6 +13,7 @@ import { FirebaseOffersServiceModule } from '@offer';
 import { FirebaseNewsletterServiceModule } from '@footer';
 import { FirebaseEmployeesServiceModule } from '@team';
 import { FirebaseNavbarServiceModule } from '@navigation';
+import { FirebaseGalleryServiceModule } from '@gallery';
 
 @NgModule({
   declarations: [AppComponent],
@@ -28,6 +29,7 @@ import { FirebaseNavbarServiceModule } from '@navigation';
     FirebaseNewsletterServiceModule,
     FirebaseEmployeesServiceModule,
     FirebaseNavbarServiceModule,
+    FirebaseGalleryServiceModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

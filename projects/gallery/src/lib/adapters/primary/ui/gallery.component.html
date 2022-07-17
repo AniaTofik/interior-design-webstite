@@ -7,67 +7,9 @@
   </div>
   <div class="container">
     <div class="row row-cols-1 row-cols-sm-2  row-cols-md-3 g-4">
-      <div class="col">
+      <div class="col" *ngFor="let photo of galleries$ | async">
         <div class="card">
-          <img src="/assets/img/architectural.jpg" class="card-img-top" style="height: 20vh; width: auto;"
-            alt="living room">
-        </div>
-      </div>
-      <div class="col">
-        <div class="card">
-          <img src="/assets/img/bathroom.jpg" class="card-img-top" style="height: 20vh; width: auto;" alt="bathroom">
-        </div>
-      </div>
-      <div class="col">
-        <div class="card">
-          <img src="/assets/img/bathroom2.jpg" class="card-img-top" style="height: 20vh; width: auto;" alt="bathroom">
-
-        </div>
-      </div>
-      <div class="col">
-        <div class="card">
-          <img src="/assets/img/bedroom.jpg" class="card-img-top" style="height: 20vh; width: auto;" alt="...">
-        </div>
-      </div>
-      <div class="col">
-        <div class="card">
-          <img src="/assets/img/dining.jpg" class="card-img-top" style="height: 20vh; width: auto;" alt="dining">
-        </div>
-      </div>
-      <div class="col">
-        <div class="card">
-          <img src="/assets/img/kitchen-living-room.jpg" class="card-img-top" style="height: 20vh; width: auto;"
-            alt="kitchen living room">
-        </div>
-      </div>
-      <div class="col">
-        <div class="card">
-          <img src="/assets/img/kitchen.jpg" class="card-img-top" alt="kitchen" style="height: 20vh; width: auto;">
-        </div>
-      </div>
-      <div class="col">
-        <div class="card">
-          <img src="/assets/img/modern-living-room.jpg" style="height: 20vh; width: auto;" alt="living room">
-        </div>
-      </div>
-      <div class="col">
-        <div class="card">
-          <img src="/assets/img/project.jpg" style="height: 20vh; width: auto;" alt="project">
-        </div>
-      </div>
-      <div class="col">
-        <div class="card">
-          <img src="/assets/img/bathroom3.jpg" style="height: 20vh; width: auto;" alt="bathroom">
-        </div>
-      </div>
-      <div class="col">
-        <div class="card">
-          <img src="/assets/img/bedroom2.jpg" style="height: 20vh; width: auto;" alt="bedroom">
-        </div>
-      </div>
-      <div class="col">
-        <div class="card">
-          <img src="/assets/img/livingroom.jpg" style="height: 20vh; width: auto;" alt="living room">
+          <img [src]="photo.imageUrl" class="card-img-top" style="height: 20vh; width: auto;" [alt]="photo.alt">
         </div>
       </div>
     </div>
