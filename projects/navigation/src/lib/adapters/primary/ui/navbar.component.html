@@ -1,20 +1,21 @@
-<nav class="navbar navbar-expand-lg sticky-top navbar-simple bg-light nav-line sticky fs-0" style="z-index: 100;">
+<nav class="navbar navbar-expand-lg sticky-top navbar-simple bg-light sticky fs-0" style="z-index: 100;">
   <div class="container-fluid">
     <a class="d-flex align-items-end navbar-brand fw-bold p-0 m-0 text-dark" style="font-size: 1rem;" href="/"> <span
         class="material-symbols-outlined px-2 m-2 fs-1 mb-4 text-primary fw-bold">
         handshake
-      </span><span class="fs-6">PRACOWNIA<br> DOBRYCH<br> WNĘTRZ</span></a>
+      </span><span *ngIf="navbar$ | async as navbar" class="fs-6">{{navbar.title}}<br> {{navbar.title2}}<br>
+        {{navbar.title3}}</span></a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
       aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse d-lg-flex justify-content-center align-items-center ms-4 ms-xl-0"
       id="navbarNavAltMarkup">
-      <div class="navbar-nav text-uppercase">
-        <a class="nav-link text-dark fw-bold" aria-current="page" href="#about">O nas</a>
-        <a class="nav-link text-dark fw-bold" href="#offer">Nasza oferta</a>
-        <a class="nav-link text-dark fw-bold" href="#gallery">Galeria</a>
-        <a class="nav-link text-dark fw-bold" href="#contact">Kontakt</a>
+      <div *ngIf="navbar$ | async as navbar" class="navbar-nav text-uppercase">
+        <a class="nav-link text-dark fw-bold" aria-current="page" href="#about">{{navbar.menu1}}</a>
+        <a class="nav-link text-dark fw-bold" href="#offer">{{navbar.menu2}}</a>
+        <a class="nav-link text-dark fw-bold" href="#gallery">{{navbar.menu3}}</a>
+        <a class="nav-link text-dark fw-bold" href="#contact">{{navbar.menu4}}</a>
       </div>
     </div>
   </div>
