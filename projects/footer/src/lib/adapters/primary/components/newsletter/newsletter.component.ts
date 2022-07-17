@@ -5,6 +5,8 @@ import {
   ViewEncapsulation,
 } from '@angular/core';
 import { FormControl, FormGroup } from '@angular/forms';
+import { Observable } from 'rxjs';
+import { FooterTextDTO } from '../../../../application/ports/primary/dto/footer-text.dto';
 import {
   ADDS_NEWSLETTER_DTO,
   AddsNewsletterDtoPort,

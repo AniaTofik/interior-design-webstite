@@ -10,7 +10,10 @@ import { FirebaseHeroTextsServiceModule } from '@home';
 import { AngularFireModule } from '@angular/fire/compat';
 import { FirebaseAboutTextsServiceModule } from '@about';
 import { FirebaseOffersServiceModule } from '@offer';
-import { FirebaseNewsletterServiceModule } from '@footer';
+import {
+  FirebaseFooterTextServiceModule,
+  FirebaseNewsletterServiceModule,
+} from '@footer';
 import { FirebaseEmployeesServiceModule } from '@team';
 import { FirebaseNavbarServiceModule } from '@navigation';
 import { FirebaseGalleryServiceModule } from '@gallery';
@@ -30,6 +33,7 @@ import { FirebaseGalleryServiceModule } from '@gallery';
     FirebaseEmployeesServiceModule,
     FirebaseNavbarServiceModule,
     FirebaseGalleryServiceModule,
+    FirebaseFooterTextServiceModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
