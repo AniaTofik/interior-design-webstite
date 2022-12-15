@@ -1,9 +1,10 @@
-<section class="container-fluid text-light fw-bold d-flex flex-column justify-content-center align-item-center">
+<section class="container-fluid text-light fw-bold d-flex flex-column justify-content-center align-items-center">
   <div *ngIf="text$ | async as text" class="">
     <img class="position-relative" [src]="text.imageUrl" class="d-block w-100 h-100" alt="living room">
   </div>
   <div class="position-absolute px-3 px-lg-5 text-left d-flex flex-column justify-content-center align-items-center"
     *ngIf="text$ | async as text">
-    <h6 class="text-uppercase fs-3">{{text.title}}</h6>
-    <h6 class="text-lowercase fs-6">{{text.text}}</h6>
+    <h6 class="text-uppercase fs-3 mx-3">{{text.title}}</h6>
+    <h6 class="text-lowercase fs-6 mx-3">{{text.text}}</h6>
   </div>
+  </section>
