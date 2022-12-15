@@ -1,5 +1,5 @@
 
-<nav class="navbar navbar-expand-lg sticky-top navbar-simple bg-light sticky fs-0" style="z-index: 100;">
+<nav class="navbar fixed-navbar navbar-expand-lg bg-light fs-0" style="z-index: 100;">
   <div class="container-fluid">
     <a class="d-flex align-items-end navbar-brand fw-bold p-0 m-0 text-dark" style="font-size: 1rem;" href="/"> <span
         class="material-symbols-outlined px-2 m-2 fs-1 mb-4 text-primary fw-bold">
@@ -14,30 +14,9 @@
     <div class="collapse navbar-collapse d-lg-flex justify-content-center align-items-center ms-4 ms-xl-0"
       id="navbarNavAltMarkup">
       <div *ngFor="let navbar of navbars$ | async" class="navbar-nav text-uppercase">
-        <a class="nav-link text-dark fw-bold" aria-current="page" [href]="navbar.link">{{navbar.menu}}</a>
+        <a class="nav-link text-dark fw-bold active" aria-current="page" [href]="navbar.link">{{navbar.menu}}</a>
       </div>
     </div>
   </div>
 </nav>
 
-<!-- <a class="nav-link text-dark fw-bold" href="#offer">{{navbar.menu2}}</a> -->
-<!-- <a class="nav-link text-dark fw-bold" href="#gallery">{{navbar.menu3}}</a>
-        <a class="nav-link text-dark fw-bold" href="#contact">{{navbar.menu4}}</a>
-      </div>
-    </div>
-   </div>
-</nav>
-
-        <--<a [ngClass]="{navbar.isChecked === true }" (click)="onCloseNavbarMenuClicked(navbar)"
-          [checked]="navbar.isChecked" class="nav-link text-dark fw-bold" aria-current="page" -->
-<!-- [href]="navbar.link">{{navbar.menu}}</a> -->
-<!-- <a class="nav-link text-dark fw-bold" href="#offer">{{navbar.menu2}}</a> -->
-<!-- <a class="nav-link text-dark fw-bold" href="#gallery">{{navbar.menu3}}</a>
-        <a class="nav-link text-dark fw-bold" href="#contact">{{navbar.menu4}}</a> -->
-
-
-<!-- <button [ngClass]="{ 'd-none': navbars$.isChecked === true }" class="navbar-toggler" type="button"
-        data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup"
-        aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button> -->
