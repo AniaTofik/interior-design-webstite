@@ -1,9 +1,10 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { NavbarComponent } from './navbar.component';
+import {MatSidenavModule} from '@angular/material/sidenav';
 
 @NgModule({
-  imports: [CommonModule],
+  imports: [CommonModule, MatSidenavModule],
   declarations: [NavbarComponent],
   providers: [],
   exports: [NavbarComponent],

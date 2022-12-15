@@ -17,6 +17,7 @@ import {
 import { FirebaseEmployeesServiceModule } from '@team';
 import { FirebaseNavbarServiceModule } from '@navigation';
 import { FirebaseGalleryServiceModule } from '@gallery';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [AppComponent],
@@ -34,6 +35,7 @@ import { FirebaseGalleryServiceModule } from '@gallery';
     FirebaseNavbarServiceModule,
     FirebaseGalleryServiceModule,
     FirebaseFooterTextServiceModule,
+    BrowserAnimationsModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

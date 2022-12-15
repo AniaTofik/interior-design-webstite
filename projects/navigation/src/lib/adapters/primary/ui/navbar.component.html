@@ -1,9 +1,11 @@
+
 <nav class="navbar navbar-expand-lg sticky-top navbar-simple bg-light sticky fs-0" style="z-index: 100;">
   <div class="container-fluid">
     <a class="d-flex align-items-end navbar-brand fw-bold p-0 m-0 text-dark" style="font-size: 1rem;" href="/"> <span
         class="material-symbols-outlined px-2 m-2 fs-1 mb-4 text-primary fw-bold">
         handshake
-      </span><span *ngIf="logo$ | async as logo" class="fs-6">{{logo.title}}<br> {{logo.title2}}<br>
+      </span>
+      <span *ngIf="logo$ | async as logo" class="fs-6">{{logo.title}}<br> {{logo.title2}}<br>
         {{logo.title3}}</span></a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
       aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -17,6 +19,7 @@
     </div>
   </div>
 </nav>
+
 <!-- <a class="nav-link text-dark fw-bold" href="#offer">{{navbar.menu2}}</a> -->
 <!-- <a class="nav-link text-dark fw-bold" href="#gallery">{{navbar.menu3}}</a>
         <a class="nav-link text-dark fw-bold" href="#contact">{{navbar.menu4}}</a>
